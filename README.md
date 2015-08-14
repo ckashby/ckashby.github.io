@@ -2,7 +2,7 @@
 
 Hi. This is my Web site on github.
 
-Check it out at <a href="http://ckashby.github.io">this link.</a>
+Check it out from <a href="http://ckashby.github.io">this link.</a>
 
 Have a great day!
 
