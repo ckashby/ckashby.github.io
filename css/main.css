@@ -3,6 +3,7 @@
 ************************************/
 
  body {
+ 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -74,7 +75,7 @@ header {
 /* Large Text */
 
 h1, h2 {
-	color: #03a9f4;
+	color: blue;
 	/* font-family: 'Open Sans', sans-serif; */
 	font-weight: normal;
 	
@@ -93,6 +94,18 @@ h2 {
 h3 {
 	font-size: 1em;
 	margin: 0 1em 1em 1em;
+}
+
+/***********************************
+NAVIGATION
+************************************/
+
+nav {
+	text-align: center;
+	background-color: #03a9f4;
+	/* TODO: add margin-right */
+
+	padding: 14px 0 10px 0;
 }
 
 /***********************************
