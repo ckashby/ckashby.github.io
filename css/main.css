@@ -79,4 +79,6 @@ header {
 footer {
 	clear: both;
 	text-align: center;
+	font-size: 0.7em;
+	color: #ccc;
 }
