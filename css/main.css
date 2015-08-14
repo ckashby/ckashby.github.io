@@ -9,7 +9,7 @@
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 }
 
 img {
@@ -75,7 +75,7 @@ header {
 /* Large Text */
 
 h1, h2 {
-	color: blue;
+	color: #00bcd4;
 	/* font-family: 'Open Sans', sans-serif; */
 	font-weight: normal;
 	
