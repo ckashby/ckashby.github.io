@@ -16,6 +16,12 @@ TWO COLUMN LAYOUT
   float: right;
 }
 
+/***********************************
+PAGE: PORTFOLIO - THREE COLUMN LAYOUT    
+************************************/
+#gallery li {
+  width: 28.3333%;
+}
 
 
 
