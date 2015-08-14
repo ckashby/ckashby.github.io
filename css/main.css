@@ -71,3 +71,12 @@ header {
 	padding: 0;
 }
 
+
+/***********************************
+ FOOTER
+************************************/
+
+footer {
+	clear: both;
+	text-align: center;
+}
