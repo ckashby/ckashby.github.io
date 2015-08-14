@@ -118,6 +118,20 @@ nav a:hover {
 	color: #000;
 }
 
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+.selected {
+	color: #000;
+}
+
+
 /***********************************
  FOOTER
 ************************************/
