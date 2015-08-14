@@ -1,5 +1,25 @@
 /* Media queries for responsive design */
 
+@media screen and (min-width: 480px) {
+
+/***********************************
+TWO COLUMN LAYOUT
+************************************/
+
+#primary {
+  width: 50%;
+  float: left;
+}
+
+#secondary {
+  width: 40%;
+  float: right;
+}
+
+
+
+
+
 /***********************************
 HEADER
 ************************************/
