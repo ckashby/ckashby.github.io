@@ -71,6 +71,29 @@ header {
 	padding: 0;
 }
 
+/* Large Text */
+
+h1, h2 {
+	color: #03a9f4;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-weight: normal;
+	
+}
+
+h1 {
+	font-size: 1.1em;
+	line-height: 0.8em;
+}
+
+h2 {
+	font-size: 0.9em;
+	line-height: 0.8em;
+}
+
+h3 {
+	font-size: 1em;
+	margin: 0 1em 1em 1em;
+}
 
 /***********************************
  FOOTER
