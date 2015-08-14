@@ -23,7 +23,12 @@ PAGE: PORTFOLIO - THREE COLUMN LAYOUT
   width: 28.3333%;
 }
 
-
+/***********************************
+PAGE: PORTFOLIO - nth-child is super cool!    
+************************************/
+#gallery li:nth-child(4n) {
+  clear: left;
+}
 
 
 /***********************************
