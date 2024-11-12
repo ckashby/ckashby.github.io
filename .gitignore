@@ -1,5 +1,8 @@
-# OSX DS Store
+# OSX DS Store for MacOS
 .DS_Store
+
+# If you have JavaScript modules
+node_modules
 
 # Images of plants
 images/
