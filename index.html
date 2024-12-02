@@ -35,6 +35,25 @@
       }
     }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all links that should close the navbar
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Close the navbar on small screens
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                
+                if (window.innerWidth < 992) { // Bootstrap's lg breakpoint
+                    navbarToggler.classList.add('collapsed');
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -61,7 +80,7 @@
             <a class="nav-link" href="#opensource">Open Source</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#community">Community</a>
+            <a class="nav-link" href="#community" data-bs-dismiss="collapse">Community</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Info</a>
