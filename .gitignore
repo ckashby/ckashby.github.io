@@ -4,9 +4,6 @@
 # If you have JavaScript modules
 node_modules
 
-# Images of plants
-images/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
