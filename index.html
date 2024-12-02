@@ -1,14 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CKAshby Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CKAshby Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity=""
+    crossorigin="">
+  <style>
+    /* Responsive top padding to prevent navbar overlap */
+    body {
+      padding-top: 56px;
+      /* Default padding */
+    }
+
+    section {
+      padding-top: 56px;
+      /* Default padding */
+    }
+
+    /* Adjust padding for different screen sizes */
+    @media (min-width: 992px) {
+      body {
+        padding-top: 70px;
+        /* Larger padding for larger screens */
+      }
+    }
+
+    @media (max-width: 991px) {
+      body {
+        padding-top: 56px;
+        /* Smaller padding for mobile */
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <nav><a href="/">Home</a> | <a href="/blog">Blog</a></nav>
-    <h1>CKAshby Website</h1>
-    <p>E Komo Mai Kakou!</p>
-    <p>Kaulana na pua o Hawaii</p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#opensource">Open Source</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#community">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.slashdot.org" target="_blank" rel="noopener noreferrer">Slashdot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.free-css.com/" target="_blank" rel="noopener noreferrer">Free-CSS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container" id="top">
+    <h1>CKAshby Blog<span class="badge text-bg-warning text-primary">New</span></h1>
+    <p>E Komo Mai Ka Blog!</p>
+    <p>Setup bootstrap hero and flex columns!</p>
+
+    <div class="d-flex"> <!-- Beginning of card container -->
+
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+        <div class="card-body">
+          <h5 class="card-title">Clay racing the fin</h5>
+          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
+            now!<span class="badge text-bg-secondary">4</span></a>
+        </div>
+      </div>
+
+
+    </div> <!-- End of card container -->
+
+    <section id="interests"> <!-- Beginning of sections -->
+      <!-- <h1 class="display-1"></h1>   h1.display-1   lorem5  -->
+      <h1 class="display-3">Interests</h1>
+      <p>As an Engineering Manager, you’ll build out a winning team that grows our product offerings that customers love
+        and ensure high availability, scalability, and low latency. You will directly impact customers, drive
+        improvements
+        in cross-team initiatives, and uphold rigorous technical standards within your team. Ever since the inception of
+        the team, we’ve been dedicated to delivering an exceptional product experience while reducing our operational
+        overhead.</p>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo? Laboriosam
+        quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus maxime
+        delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus numquam quod fuga?
+      </p>
+    </section>
+    <section id="opensource">
+      <h1>Open Source</h1>
+      <p>first party products and resells many hundreds more via Rippling’s software app store. The team is responsible
+        for managing and scaling Rippling billing infrastructure to enable sales teams to seamlessly sell these products
+        via its contract, subscriptions, and discount management platform and customer support/success teams to
+        seamlessly
+        manage customer payments and drive further cross-sell, upsell and adoption. The team manages multiple different
+        payment rails, is responsible for invoicing and collections from our clients and is also responsible for
+        building
+        usage based billing and marketplace revenue infrastructure of Rippling app store. The billing Team also ensures
+        that company investors, boards, and CXOs get a complete picture of the company’s current and future revenue at
+        any
+        given time.</p>
+    </section>
+    <section id="community">
+      <h1>Community</h1>
+      <p>first party products and resells many hundreds more via Rippling’s software app store. The team is responsible
+        for managing and scaling Rippling billing infrastructure to enable sales teams to seamlessly sell these products
+        via its contract, subscriptions, and discount management platform and customer support/success teams to
+        seamlessly
+        manage customer payments and drive further cross-sell, upsell and adoption. The team manages multiple different
+        payment rails, is responsible for invoicing and collections from our clients and is also responsible for
+        building
+        usage based billing and marketplace revenue infrastructure of Rippling app store. The billing Team also ensures
+        that company investors, boards, and CXOs get a complete picture of the company’s current and future revenue at
+        any
+        given time.</p>
+    </section>
+    <section id="contact">
+      <h1>Contact Info</h1>
+      <p>As an Engineering Manager, you’ll build out a winning team that grows our product offerings that customers love
+        and ensure high availability, scalability, and low latency. You will directly impact customers, drive
+        improvements
+        in cross-team initiatives, and uphold rigorous technical standards within your team. Ever since the inception of
+        the team, we’ve been dedicated to delivering an exceptional product experience while reducing our operational
+        overhead.</p>
+    </section> <!-- End of sections -->
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
+      <div class="card-body">
+        <h5 class="card-title">Clay racing the fin</h5>
+        <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
+        <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary">Sign up now!<span class="badge text-bg-secondary">4</span></a>
+      </div>
+    </div>
+
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity=""
+    crossorigin=""></script>
+
 </body>
+
 </html>
