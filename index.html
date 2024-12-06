@@ -36,30 +36,30 @@
     }
   </style>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Select all links that should close the navbar
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                // Close the navbar on small screens
-                const navbarToggler = document.querySelector('.navbar-toggler');
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                
-                if (window.innerWidth < 992) { // Bootstrap's lg breakpoint
-                    navbarToggler.classList.add('collapsed');
-                    navbarCollapse.classList.remove('show');
-                }
-            });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Select all links that should close the navbar
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          // Close the navbar on small screens
+          const navbarToggler = document.querySelector('.navbar-toggler');
+          const navbarCollapse = document.querySelector('.navbar-collapse');
+
+          if (window.innerWidth < 992) { // Bootstrap's lg breakpoint
+            navbarToggler.classList.add('collapsed');
+            navbarCollapse.classList.remove('show');
+          }
         });
+      });
     });
-</script>
+  </script>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="">Logo</a>
+      <a class="navbar-brand" href=""><img src="./images/cka-sig400.png" alt="image of signature" height="36"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,16 +71,10 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#opensource">Open Source</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#community">Community</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Info</a>
@@ -88,193 +82,170 @@
           <li class="nav-item">
             <a class="nav-link" href="http://www.slashdot.org" target="_blank" rel="noopener noreferrer">Slashdot</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.free-css.com/" target="_blank" rel="noopener noreferrer">Free-CSS</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
+
+
   <div class="container" id="top">
     <h1>CKAshby Blog<span class="badge text-bg-warning text-primary">New</span></h1>
-    <p>Setup bootstrap hero and flex columns!</p>
-    <img src="./images/linkedin.svg" alt="linkedin icon" width="64" />
-    <img src="./images/instagram.svg" alt="instagram icon" width="64" />
-    <img src="./images/twitter.svg" alt="twitter icon" width="64" />
-    <img src="./images/youtube.svg" alt="youtube icon" width="64" />
-    <img src="./images/facebook.svg" alt="facebook icon" width="64" />
-    <div class="d-flex"> <!-- Beginning of card container -->
+    <hr>
 
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-        <div class="card-body">
-          <h5 class="card-title">Clay racing the fin</h5>
-          <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Sign up
-            now!<span class="badge text-bg-secondary">4</span></a>
-        </div>
-      </div>
+    <a href="https://www.linkedin.com/in/clay-ashby-299709b0/"><img src="./images/linkedin.svg" alt="linkedin icon" /></a>
+    <a href="https://www.youtube.com/@claydotashbydotgmail"><img src="./images/youtube.svg" alt="youtube icon" /></a>
+    <a href="https://x.com/clayashby"><img src="./images/twitter.svg" alt="twitter icon" /></a>
+    <a href="https://www.instagram.com/clay.ashby/?hl=en"><img src="./images/instagram.svg" alt="instagram icon" /></a>
+    <a href="https://github.com/ckashby"><img src="./images/github.svg" alt="github icon" /></a>
+    <a href="https://www.facebook.com/clay.ashby.56/"><img src="./images/facebook.svg" alt="facebook icon" /></a>
 
-
-    </div> <!-- End of card container -->
-
-    <section id="interests"> <!-- Beginning of sections -->
-      <!-- <h1 class="display-1"></h1>   h1.display-1   lorem5  -->
-      <h1 class="display-3">Interests</h1>
-      <p>As an Engineering Manager, you’ll build out a winning team that grows our product offerings that customers love
-        and ensure high availability, scalability, and low latency. You will directly impact customers, drive
-        improvements
-        in cross-team initiatives, and uphold rigorous technical standards within your team. Ever since the inception of
-        the team, we’ve been dedicated to delivering an exceptional product experience while reducing our operational
-        overhead.</p>
+    <section class="border border-2 bg-blue" id="projects">
+      <h3>Projects</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem iste doloremque corporis cum?
+        Maiores perferendis esse vitae officiis atque, in consectetur a possimus modi cumque dolor quaerat repudiandae
+        error praesentium, molestiae qui beatae quae commodi iusto quam voluptatibus aliquam! Vel illo, optio recusandae
+        distinctio eaque eligendi fugiat quasi ab provident aperiam veritatis placeat ipsa</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque mollitia expedita dolores harum optio
+        quaerat aut numquam saepe maiores? Architecto sint commodi ea unde explicabo. Reprehenderit, iusto autem? Illum
+        accusamus dolorum laboriosam sapiente, aspernatur obcaecati non alias cupiditate unde odio, quidem vitae vel
+        quis
+        dolorem suscipit nisi atque temporibus blanditiis, expedita officiis adipisci tempora iure! Sapiente delectus,
+        fuga
+        eum corporis temporibus quibusdam harum cumque corrupti vel nesciunt at, necessitatibus doloremque. Ipsa nihil
+        aspernatur temporibus quibusdam fugit laborum. Eligendi ipsam ad beatae nulla, temporibus est fugiat qui quis
+        recusandae quisquam autem tempora perferendis iste voluptas expedita alias modi ut doloribus consectetur quia
+        quasi
+        omnis debitis optio veritatis. Dicta placeat nulla itaque tempora maiores rem est porro, repellat ex animi,
+        rerum
+        delectus nesciunt voluptas, sed nostrum!</p>
     </section>
-
-    <section id="projects">
-      <h1>Projects</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minima harum beatae iure quo? Laboriosam
-        quisquam quam sunt accusantium maxime nam reiciendis sint ipsa quia ducimus? Dolores, qui! Nam accusamus maxime
-        delectus veritatis repellat dolorum modi odit, commodi soluta tempore aliquam, necessitatibus numquam quod fuga?
-      </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi sint, dolore beatae labore aliquam
+      necessitatibus obcaecati accusamus placeat facere atque at quas delectus maiores totam provident et sit veritatis
+      asperiores quod impedit velit voluptatibus molestias quisquam. Animi libero voluptatibus dignissimos odit nostrum
+      non tenetur, quibusdam, debitis dolorum saepe ea pariatur iste voluptate quod harum, qui esse iure aliquam
+      recusandae voluptas molestiae consequatur dolores. Ea in dicta enim recusandae tempora doloremque cum praesentium
+      consequuntur reprehenderit eos nemo laboriosam amet veritatis at, veniam soluta laborum debitis perspiciatis
+      facere
+      suscipit illum excepturi ipsam eius minus! Numquam porro impedit unde nam exercitationem veritatis a obcaecati
+      eveniet ipsa optio distinctio placeat et quasi, pariatur alias quis. Placeat illo tenetur nostrum recusandae
+      eligendi temporibus blanditiis. Voluptas ad sapiente voluptatum veritatis, quas animi enim veniam id eum similique
+      nihil doloribus autem rerum a est hic rem commodi sequi itaque nostrum quibusdam ullam dignissimos. Itaque
+      obcaecati
+      vel praesentium. Repudiandae dolore consequuntur debitis officiis omnis beatae cum quam illo accusantium. Atque
+      harum, explicabo quisquam magni aliquid recusandae ratione cupiditate et error iste eos commodi ab eligendi
+      dolorum
+      eius sint. Quae laudantium est pariatur ea at? Incidunt vitae saepe eos vero expedita? Commodi itaque voluptas
+      impedit dolor accusamus corrupti. Saepe aspernatur autem laborum atque impedit, molestiae assumenda maxime
+      corporis
+      eveniet alias iusto architecto obcaecati! Asperiores repellendus error minus iusto aperiam sint neque nisi magni
+      quos sed quis temporibus sit nemo dolores distinctio eius accusantium perferendis earum quae, aut mollitia ipsa
+      repudiandae. Dolores facere culpa odit eos natus tempora reiciendis deserunt exercitationem ipsum voluptatem
+      laborum
+      velit voluptates adipisci, veniam quaerat ut asperiores atque consequuntur quibusdam. Suscipit, possimus! Facere
+      totam dignissimos consequatur voluptatem similique qui expedita explicabo, enim aliquid et placeat obcaecati
+      officiis sit, architecto, repudiandae quidem suscipit officia! Odio nihil quo quos, ullam deleniti suscipit
+      fugiat.
+      Saepe voluptates cupiditate vitae placeat voluptate, nihil tempora, sint quis, harum accusantium asperiores. Qui,
+      officia rem corrupti provident debitis esse nam id molestias reprehenderit necessitatibus repellendus sint eaque
+      voluptate? Illum odio delectus dignissimos voluptas aliquam laboriosam, ducimus modi. Natus deserunt similique
+      pariatur. Fugiat explicabo ipsa quisquam impedit numquam inventore modi cumque expedita in, laborum eligendi
+      dolorem
+      debitis doloremque quas corrupti ipsum voluptas quis. Aliquid eaque possimus tempora vero architecto rem
+      reiciendis
+      esse facilis recusandae amet sit aspernatur fugit ea itaque harum quisquam ad ab impedit eius, tempore quidem
+      repellat. Praesentium iure excepturi veniam dolores tempora ratione quis, quod vitae unde architecto molestiae
+      porro
+      autem adipisci. Excepturi autem enim dignissimos libero, nesciunt, consequuntur maiores quibusdam possimus
+      reiciendis porro eaque magni, impedit amet tempora assumenda? Beatae modi itaque qui cum aperiam, iusto officia
+      eaque illo repellat, reprehenderit placeat velit nostrum quibusdam in? Doloremque dolore optio quos illo molestiae
+      accusantium, possimus quasi labore dolor quis perspiciatis velit architecto facere ipsa iste magnam impedit sint
+      fugit aut! Accusantium harum nemo omnis? Similique asperiores ad, porro magnam eligendi eius aliquid accusamus
+      veniam cum perferendis iure excepturi deleniti tenetur officiis assumenda commodi facilis? Velit amet rem non,
+      distinctio nemo similique dolore eligendi cumque autem illum et commodi iusto molestias, ipsam incidunt dicta
+      ducimus temporibus atque vel? Rem, voluptatem quos. Dicta nisi similique molestiae sit labore, laborum modi cum
+      hic
+      eligendi commodi aliquam blanditiis veniam! Non repellat deserunt ut ea? Velit eligendi nisi reprehenderit cumque?
+      Optio non cum nesciunt earum eveniet consectetur magni, nulla sequi sunt explicabo ratione dolorum suscipit
+      temporibus et sapiente odit. Laborum, omnis.</p>
+    <section class="border border-2 bg-blue" id="opensource">
+      <h3>Open Source</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem iste doloremque corporis cum?
+        Maiores
+        perferendis esse vitae officiis atque, in consectetur a possimus modi cumque dolor quaerat repudiandae error
+        praesentium, molestiae qui beatae quae commodi iusto quam voluptatibus aliquam! Vel illo, optio recusandae
+        distinctio eaque eligendi fugiat quasi ab provident aperiam veritatis placeat ipsa?
     </section>
-    <section id="opensource">
-      <h1>Open Source</h1>
-      <p>first party products and resells many hundreds more via Rippling’s software app store. The team is responsible
-        for managing and scaling Rippling billing infrastructure to enable sales teams to seamlessly sell these products
-        via its contract, subscriptions, and discount management platform and customer support/success teams to
-        seamlessly
-        manage customer payments and drive further cross-sell, upsell and adoption. The team manages multiple different
-        payment rails, is responsible for invoicing and collections from our clients and is also responsible for
-        building
-        usage based billing and marketplace revenue infrastructure of Rippling app store. The billing Team also ensures
-        that company investors, boards, and CXOs get a complete picture of the company’s current and future revenue at
-        any
-        given time.</p>
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque mollitia expedita dolores harum optio
+      quaerat aut numquam saepe maiores? Architecto sint commodi ea unde explicabo. Reprehenderit, iusto autem? Illum
+      accusamus dolorum laboriosam sapiente, aspernatur obcaecati non alias cupiditate unde odio, quidem vitae vel quis
+      dolorem suscipit nisi atque temporibus blanditiis, expedita officiis adipisci tempora iure! Sapiente delectus,
+      fuga eum corporis temporibus quibusdam harum cumque corrupti vel nesciunt at, necessitatibus doloremque. Ipsa
+      nihil aspernatur temporibus quibusdam fugit laborum. Eligendi ipsam ad beatae nulla, temporibus est fugiat qui
+      quis recusandae quisquam autem tempora perferendis iste voluptas expedita alias modi ut doloribus consectetur quia
+      quasi omnis debitis optio veritatis. Dicta placeat nulla itaque tempora maiores rem est porro, repellat ex animi,
+      rerum delectus nesciunt voluptas, sed nostrum!</p>
     </section>
-    <section id="community">
-      <h1>Community</h1>
-      <p>first party products and resells many hundreds more via Rippling’s software app store. The team is responsible
-        for managing and scaling Rippling billing infrastructure to enable sales teams to seamlessly sell these products
-        via its contract, subscriptions, and discount management platform and customer support/success teams to
-        seamlessly
-        manage customer payments and drive further cross-sell, upsell and adoption. The team manages multiple different
-        payment rails, is responsible for invoicing and collections from our clients and is also responsible for
-        building
-        usage based billing and marketplace revenue infrastructure of Rippling app store. The billing Team also ensures
-        that company investors, boards, and CXOs get a complete picture of the company’s current and future revenue at
-        any
-        given time.</p>
-    </section>
-    <section id="contact">
-      <h1>Contact Info</h1>
-      <p>As an Engineering Manager, you’ll build out a winning team that grows our product offerings that customers love
-        and ensure high availability, scalability, and low latency. You will directly impact customers, drive
-        improvements
-        in cross-team initiatives, and uphold rigorous technical standards within your team. Ever since the inception of
-        the team, we’ve been dedicated to delivering an exceptional product experience while reducing our operational
-        overhead.</p>
-    </section> <!-- End of sections -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi sint, dolore beatae labore aliquam
+      necessitatibus obcaecati accusamus placeat facere atque at quas delectus maiores totam provident et sit veritatis
+      asperiores quod impedit velit voluptatibus molestias quisquam. Animi libero voluptatibus dignissimos odit nostrum
+      non tenetur, quibusdam, debitis dolorum saepe ea pariatur iste voluptate quod harum, qui esse iure aliquam
+      recusandae voluptas molestiae consequatur dolores. Ea in dicta enim recusandae tempora doloremque cum praesentium
+      consequuntur reprehenderit eos nemo laboriosam amet veritatis at, veniam soluta laborum debitis perspiciatis
+      facere
+      suscipit illum excepturi ipsam eius minus! Numquam porro impedit unde nam exercitationem veritatis a obcaecati
+      eveniet ipsa optio distinctio placeat et quasi, pariatur alias quis. Placeat illo tenetur nostrum recusandae
+      eligendi temporibus blanditiis. Voluptas ad sapiente voluptatum veritatis, quas animi enim veniam id eum similique
+      nihil doloribus autem rerum a est hic rem commodi sequi itaque nostrum quibusdam ullam dignissimos. Itaque
+      obcaecati
+      vel praesentium. Repudiandae dolore consequuntur debitis officiis omnis beatae cum quam illo accusantium. Atque
+      harum, explicabo quisquam magni aliquid recusandae ratione cupiditate et error iste eos commodi ab eligendi
+      dolorum
+      eius sint. Quae laudantium est pariatur ea at? Incidunt vitae saepe eos vero expedita? Commodi itaque voluptas
+      impedit dolor accusamus corrupti. Saepe aspernatur autem laborum atque impedit, molestiae assumenda maxime
+      corporis
+      eveniet alias iusto architecto obcaecati! Asperiores repellendus error minus iusto aperiam sint neque nisi magni
+      quos sed quis temporibus sit nemo dolores distinctio eius accusantium perferendis earum quae, aut mollitia ipsa
+      repudiandae. Dolores facere culpa odit eos natus tempora reiciendis deserunt exercitationem ipsum voluptatem
+      laborum
+      velit voluptates adipisci, veniam quaerat ut asperiores atque consequuntur quibusdam. Suscipit, possimus! Facere
+      totam dignissimos consequatur voluptatem similique qui expedita explicabo, enim aliquid et placeat obcaecati
+      officiis sit, architecto, repudiandae quidem suscipit officia! Odio nihil quo quos, ullam deleniti suscipit
+      fugiat.
+      Saepe voluptates cupiditate vitae placeat voluptate, nihil tempora, sint quis, harum accusantium asperiores. Qui,
+      officia rem corrupti provident debitis esse nam id molestias reprehenderit necessitatibus repellendus sint eaque
+      voluptate? Illum odio delectus dignissimos voluptas aliquam laboriosam, ducimus modi. Natus deserunt similique
+      pariatur. Fugiat explicabo ipsa quisquam impedit numquam inventore modi cumque expedita in, laborum eligendi
+      dolorem
+      debitis doloremque quas corrupti ipsum voluptas quis. Aliquid eaque possimus tempora vero architecto rem
+      reiciendis
+      esse facilis recusandae amet sit aspernatur fugit ea itaque harum quisquam ad ab impedit eius, tempore quidem
+      repellat. Praesentium iure excepturi veniam dolores tempora ratione quis, quod vitae unde architecto molestiae
+      porro
+      autem adipisci. Excepturi autem enim dignissimos libero, nesciunt, consequuntur maiores quibusdam possimus
+      reiciendis porro eaque magni, impedit amet tempora assumenda? Beatae modi itaque qui cum aperiam, iusto officia
+      eaque illo repellat, reprehenderit placeat velit nostrum quibusdam in? Doloremque dolore optio quos illo molestiae
+      accusantium, possimus quasi labore dolor quis perspiciatis velit architecto facere ipsa iste magnam impedit sint
+      fugit aut! Accusantium harum nemo omnis? Similique asperiores ad, porro magnam eligendi eius aliquid accusamus
+      veniam cum perferendis iure excepturi deleniti tenetur officiis assumenda commodi facilis? Velit amet rem non,
+      distinctio nemo similique dolore eligendi cumque autem illum et commodi iusto molestias, ipsam incidunt dicta
+      ducimus temporibus atque vel? Rem, voluptatem quos. Dicta nisi similique molestiae sit labore, laborum modi cum
+      hic
+      eligendi commodi aliquam blanditiis veniam! Non repellat deserunt ut ea? Velit eligendi nisi reprehenderit cumque?
+      Optio non cum nesciunt earum eveniet consectetur magni, nulla sequi sunt explicabo ratione dolorum suscipit
+      temporibus et sapiente odit. Laborum, omnis.</p>
 
-
-    <div class="card" style="width: 18rem;">
-      <img src="./images/ClayRacingTheFin.png" class="card-img-top" alt="Clay racing the fin">
-      <div class="card-body">
-        <h5 class="card-title">Clay racing the fin</h5>
-        <p class="card-text">Good fun racing off the coast of Puerto Rico.</p>
-        <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank" rel="noopener noreferrer"
-          class="btn btn-primary">Sign up now!<span class="badge text-bg-secondary">4</span></a>
-      </div>
-    </div>
-
-    <div class="spinner-border text-primary" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-    <div class="spinner-border text-warning" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-
+    <section class="border border-2 bg-blue" id="contact">
+      <h3>Contact Info</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem iste doloremque corporis cum.
+        Maiores
+        perferendis esse vitae officiis atque, in consectetur a possimus modi cumque dolor quaerat repudiandae error
+        praesentium, molestiae qui beatae quae commodi iusto quam voluptatibus aliquam! Vel illo, optio recusandae
+        distinctio eaque eligendi fugiat quasi ab provident aperiam veritatis placeat ipsa?
   </div>
-
+  </p>
+  </section>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity=""
     crossorigin=""></script>
 
