@@ -2,168 +2,370 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CKAshby Blog</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity=""
-    crossorigin="">
-  <style>
-    /* Responsive top padding to prevent navbar overlap */
-    body {
-      padding-top: 56px;
-      /* Default padding */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clay Kalei Ashby - AI / ML / Full-Stack Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        section {
+            padding: 80px 0;
+            min-height: 100vh;
+        }
 
-    section {
-      padding-top: 56px;
-      /* Default padding */
-    }
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
 
-    /* Adjust padding for different screen sizes */
-    @media (min-width: 992px) {
-      body {
-        padding-top: 70px;
-        /* Larger padding for larger screens */
-      }
-    }
+        .project-card {
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    @media (max-width: 991px) {
-      body {
-        padding-top: 56px;
-        /* Smaller padding for mobile */
-      }
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Select all links that should close the navbar
-      const navLinks = document.querySelectorAll('.nav-link');
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
 
-      navLinks.forEach(link => {
-        link.addEventListener('click', function () {
-          // Close the navbar on small screens
-          const navbarToggler = document.querySelector('.navbar-toggler');
-          const navbarCollapse = document.querySelector('.navbar-collapse');
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-          if (window.innerWidth < 992) { // Bootstrap's lg breakpoint
-            navbarToggler.classList.add('collapsed');
-            navbarCollapse.classList.remove('show');
-          }
-        });
-      });
-    });
-  </script>
+        .hero-section {
+            background: linear-gradient(135deg, #007bff 0%, #6610f2 100%);
+            color: white;
+        }
+
+        .custom-shape {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 50px;
+        }
+
+        .custom-shape .shape-fill {
+            fill: #FFFFFF;
+        }
+    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href=""><img src="./images/cka-sig400.png" alt="image of signature" height="36"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ckashby.netlify.app/">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#what-i-do">What I Do</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#opensource">Open Source</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Info</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="container" id="top">
-    <h1 class="display-3">Clay Kalei Ashby</h1>
-    <p class="lead">AI / ML Engineer - Full-Stack Web / Mobile Developer - Tech Project / Program Manager</p>
-    <hr>
-
-    <a href="https://www.linkedin.com/in/clay-ashby-299709b0/"><img src="./images/linkedin.svg"
-        alt="linkedin icon" /></a>
-    <a href="https://www.youtube.com/@claydotashbydotgmail"><img src="./images/youtube.svg" alt="youtube icon" /></a>
-    <a href="https://x.com/clayashby"><img src="./images/twitter.svg" alt="twitter icon" /><span
-        class="badge text-bg-warning text-primary">New</span></a>
-    <a href="https://www.instagram.com/clay.ashby/?hl=en"><img src="./images/instagram.svg" alt="instagram icon" /></a>
-    <a href="https://github.com/ckashby"><img src="./images/github.svg" alt="github icon" /><span
-        class="badge text-bg-warning text-primary">New</span></a>
-    <a href="https://www.facebook.com/clay.ashby.56/"><img src="./images/facebook.svg" alt="facebook icon" /></a>
-
-    <section class="border border-2" id="about-me">
-      <div class="row">
-        <h3 class="display-3">Hi, I'm Clay <img src="./images/react.svg" alt="react.svg" height="64" /> <img
-            src="./images/yingyang.svg" alt="yingyang.svg" height="64" /> <img src="./images/swift.svg" alt="swift.svg"
-            height="64" /></h3>
-
-        <div class="col">
-          <p>I am an AI / ML Engineer & Full-Stack Web / Mobile Developer with over 20 years of experience designing and
-            developing products with Python, TypeScript, JavaScript, Java, Swift, React, Node, Nextjs, Ruby on Rails, Firebase, Docker,
-            Kubernetes, Heroku, Amazon, Google Cloud Platform, Azure Cloud and cross platform
-            frameworks including React Native and Ionic.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">C K Ashby</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#opensource">Open Source</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </section>
+    </nav>
 
-    <section class="border border-2 bg-blue" id="what-i-do">
-      <div class="row"> <!-- TODO: fix layout with image and one column for text on all breakpoints. -->
-        <div class="col">
-          <h3>What I do...</h3>
-          <div>Super Full Stack Developer Who Loves Exploring Innovative Libraries and Frameworks. Lately I have been
-            building Large Language Models
-            with PyTorch and Tensorflow, evaluating them with Puppeteer... ? and customizing them wi
-            <br>
-            <p><span class="lead">I am currently focused on Strategies to Optimize Test Time Compute:</span>
-              <br><b>Model Compression:</b> Techniques like pruning, quantization, and knowledge distillation can reduce
-              the model's size and computational requirements without significantly sacrificing performance.
-              <br>Efficient Architecture Design: Creating models with fewer parameters or more streamlined neural
-              network structures that can process inputs more quickly.
-              <br>Hardware Acceleration: Using specialized hardware like GPUs or TPUs to speed up model inference.
-            </p>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Clay Kalei Ashby</h1>
+                    <h2 class="h3 mb-4">AI / ML / Full-Stack Software Engineer</h2>
+                    <!-- <h2 class="h3 mb-4">Technical Project / Program Manager</h2> -->
+                    <p class="lead mb-4">Building elegant software solutions to complex problems</p>
+                    <a href="#contact" class="btn btn-light btn-lg">Get in touch</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg"
+                        style="background-color: #1e1e1e; border-radius: 10px; font-family: 'Courier New', Courier, monospace;">
+                        <!-- Terminal background -->
+                        <rect x="0" y="0" width="600" height="400" fill="#1e1e1e" rx="10" ry="10" />
+                        <text x="20" y="50" font-size="18" fill="#00ff00" id="line1"></text>
+                        <text x="20" y="80" font-size="18" fill="#00ff00" id="line2"></text>
+                        <text x="20" y="110" font-size="18" fill="#00ff00" id="line3"></text>
+                        <text x="20" y="140" font-size="18" fill="#00ff00" id="line4"></text>
+                        <text x="20" y="170" font-size="18" fill="#00ff00" id="line5"></text>
 
-        </div class="col">
-        <div class="col">
-          <div><img src="./images/web-icons.png" alt="web tech icons" width="320" /></div>
+                        <!-- Animation script -->
+                        <script>
+                            const commands = [
+                                'pip install -U dspy',
+                                'curl -fsSL https://ollama.ai/install.sh | sh',
+                                'ollama run llama3.2:1b',
+                                "lm = dspy.LM('ollama_chat/llama3.2', api_base='http://localhost:11434', api_key='api-11abc1234')",
+                                'dspy.configure(lm=lm)'
+                            ];
+
+                            let currentLine = 1;
+                            let currentText = "";
+                            let charIndex = 0;
+
+                            function typeEffect() {
+                                const textElement = document.getElementById(`line${currentLine}`);
+                                if (currentLine <= commands.length) {
+                                    currentText = commands[currentLine - 1];
+                                    if (charIndex < currentText.length) {
+                                        textElement.textContent += currentText[charIndex];
+                                        charIndex++;
+                                        setTimeout(typeEffect, 100);
+                                    } else {
+                                        currentLine++;
+                                        charIndex = 0;
+                                        setTimeout(typeEffect, 500);
+                                    }
+                                }
+                            }
+
+                            typeEffect();
+                        </script>
+                    </svg>
+                    <!-- <img src="https://cdnjs.cloudflare.com/ajax/libs/placeholder-loading/0.6.0/example-6.svg" alt="Coding illustration" class="img-fluid rounded shadow-lg"> -->
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <p>Develop intuitive, engaging front end / user interfaces for Web and mobile applications</p>
-    <p>Progressive Web Applications</p>
-    <p>Integration of third party services such as AWS / Firebase / GooglePay / MailChimp / MessageBird / Next /
-      Netlify / RevenueCat / ShipEngine / Stripe / Twilio</p>
-
-    <section class="border border-2 bg-blue" id="projects">
-      <h3>Projects</h3>
-      <p>Some apps I have developed...</p>
-      <p>Some of my YouTube videos...</p>
+        <div class="custom-shape">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
     </section>
 
-    <section class="border border-2 bg-blue" id="contact">
-      <h3>Contact Info</h3>
-      <p>Want to discuss a project or just say Hi?</p>
-      <p>Send me a message...</p>
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3>About Me</h3>
+                    <p class="lead">Full-stack Solution Developer Who Loves Exploring Innovative Libraries and
+                        Frameworks. Lately I have been
+                        building Large Language Models with PyTorch and Tensorflow, evaluating them with a Mixture of
+                        Expert LLMs and building Web interfaces with my voice.</p>
+                    <p>AI am an AI / ML Engineer & Full-Stack Web / Mobile Developer with over 20 years of experience
+                        designing and
+                        developing products with Python, TypeScript, JavaScript, Java, Swift, React, Node, Nextjs, Ruby
+                        on Rails, Firebase, Docker,
+                        Kubernetes, Heroku, Amazon, Google Cloud Platform, Azure Cloud and cross platform
+                        frameworks including React Native and Ionic.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Skills</h3>
+                    <div class="mb-3">
+                        <p class="mb-2">Frontend Development</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2">Backend Development</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2">DevOps</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2">Project Management</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity=""
-    crossorigin=""></script>
 
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="text-center mb-5">Experience</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior Software Engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Tech Corp - 2020-Present</h6>
+                            <p class="card-text">Led development of microservices architecture, improving system
+                                scalability by 200%.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">StartUp Inc - 2018-2020</h6>
+                            <p class="card-text">Developed and maintained full-stack web applications using React and
+                                Node.js.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section id="opensource" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Open Source</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 project-card">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/placeholder-loading/0.6.0/example-1.svg"
+                            class="card-img-top" alt="E-commerce Platform Project">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Platform</h5>
+                            <p class="card-text">A full-stack e-commerce solution built with React and Node.js.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/placeholder-loading/0.6.0/example-2.svg"
+                            class="card-img-top" alt="Task Management App Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Management App</h5>
+                            <p class="card-text">A real-time task management application using Socket.io.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card">
+                        <img src="https://cdnjs.cloudflare.com/ajax/libs/placeholder-loading/0.6.0/example-3.svg"
+                            class="card-img-top" alt="AI Chat Bot Project">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Chat Bot</h5>
+                            <p class="card-text">An intelligent chatbot powered by machine learning.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-auto">
+                    <a href="https://linkedin.com" class="text-light mx-2" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" class="text-light mx-2" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com" class="text-light mx-2" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                            </path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" class="text-light mx-2" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                            </path>
+                            <path d="m10 15 5-3-5-3z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="mb-0">&copy;
+                    <script>document.write(new Date().getFullYear())</script> John Doe. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Get the navbar collapse element
+        const navbarCollapse = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+
+        // Add click event listeners to all navbar links
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                // Check if the navbar is expanded (visible on mobile)
+                if (navbarCollapse.classList.contains('show')) {
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

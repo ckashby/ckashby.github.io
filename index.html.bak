@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CKAshby Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity=""
+    crossorigin="">
+  <style>
+    /* Responsive top padding to prevent navbar overlap */
+    body {
+      padding-top: 56px;
+      /* Default padding */
+    }
+
+    section {
+      padding-top: 56px;
+      /* Default padding */
+    }
+
+    /* Adjust padding for different screen sizes */
+    @media (min-width: 992px) {
+      body {
+        padding-top: 70px;
+        /* Larger padding for larger screens */
+      }
+    }
+
+    @media (max-width: 991px) {
+      body {
+        padding-top: 56px;
+        /* Smaller padding for mobile */
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Select all links that should close the navbar
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          // Close the navbar on small screens
+          const navbarToggler = document.querySelector('.navbar-toggler');
+          const navbarCollapse = document.querySelector('.navbar-collapse');
+
+          if (window.innerWidth < 992) { // Bootstrap's lg breakpoint
+            navbarToggler.classList.add('collapsed');
+            navbarCollapse.classList.remove('show');
+          }
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=""><img src="./images/cka-sig400.png" alt="image of signature" height="36"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ckashby.netlify.app/">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#what-i-do">What I Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#opensource">Open Source</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container" id="top">
+    <h1 class="display-3">Clay Kalei Ashby</h1>
+    <p class="lead">AI / ML Engineer - Full-Stack Web / Mobile Developer - Tech Project / Program Manager</p>
+    <hr>
+
+    <a href="https://www.linkedin.com/in/clay-ashby-299709b0/"><img src="./images/linkedin.svg"
+        alt="linkedin icon" /></a>
+    <a href="https://www.youtube.com/@claydotashbydotgmail"><img src="./images/youtube.svg" alt="youtube icon" /></a>
+    <a href="https://x.com/clayashby"><img src="./images/twitter.svg" alt="twitter icon" /><span
+        class="badge text-bg-warning text-primary">New</span></a>
+    <a href="https://www.instagram.com/clay.ashby/?hl=en"><img src="./images/instagram.svg" alt="instagram icon" /></a>
+    <a href="https://github.com/ckashby"><img src="./images/github.svg" alt="github icon" /><span
+        class="badge text-bg-warning text-primary">New</span></a>
+    <a href="https://www.facebook.com/clay.ashby.56/"><img src="./images/facebook.svg" alt="facebook icon" /></a>
+
+    <section class="border border-2" id="about-me">
+      <div class="row">
+        <h3 class="display-3">Hi, I'm Clay <img src="./images/react.svg" alt="react.svg" height="64" /> <img
+            src="./images/yingyang.svg" alt="yingyang.svg" height="64" /> <img src="./images/swift.svg" alt="swift.svg"
+            height="64" /></h3>
+
+        <div class="col">
+          <p>I am an AI / ML Engineer & Full-Stack Web / Mobile Developer with over 20 years of experience designing and
+            developing products with Python, TypeScript, JavaScript, Java, Swift, React, Node, Nextjs, Ruby on Rails, Firebase, Docker,
+            Kubernetes, Heroku, Amazon, Google Cloud Platform, Azure Cloud and cross platform
+            frameworks including React Native and Ionic.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="border border-2 bg-blue" id="what-i-do">
+      <div class="row"> <!-- TODO: fix layout with image and one column for text on all breakpoints. -->
+        <div class="col">
+          <h3>What I do...</h3>
+          <div>Super Full Stack Developer Who Loves Exploring Innovative Libraries and Frameworks. Lately I have been
+            building Large Language Models with PyTorch and Tensorflow, evaluating them with a Mixture of Expert LLMs.
+            <br>
+            <p><span class="lead">I am currently focused on Strategies to Optimize Test Time Compute:</span>
+              <br><b>Model Compression:</b> Techniques like pruning, quantization, and knowledge distillation can reduce
+              the model's size and computational requirements without significantly sacrificing performance.
+              <br>Efficient Architecture Design: Creating models with fewer parameters or more streamlined neural
+              network structures that can process inputs more quickly.
+              <br>Hardware Acceleration: Using specialized hardware like GPUs or TPUs to speed up model inference.
+            </p>
+          </div>
+
+        </div class="col">
+        <div class="col">
+          <div><img src="./images/web-icons.png" alt="web tech icons" width="320" /></div>
+        </div>
+      </div>
+    </section>
+    <p>Develop intuitive, engaging front end / user interfaces for Web and mobile applications</p>
+    <p>Progressive Web Applications</p>
+    <p>Integration of third party services such as AWS / Firebase / GooglePay / MailChimp / MessageBird / Next /
+      Netlify / RevenueCat / ShipEngine / Stripe / Twilio</p>
+
+    <section class="border border-2 bg-blue" id="projects">
+      <h3>Projects</h3>
+      <p>Some apps I have developed...</p>
+      <p>Some of my YouTube videos...</p>
+    </section>
+
+    <section class="border border-2 bg-blue" id="contact">
+      <h3>Contact Info</h3>
+      <p>Want to discuss a project or just say Hi?</p>
+      <p>Send me a message...</p>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity=""
+    crossorigin=""></script>
+
+</body>
+
+</html>

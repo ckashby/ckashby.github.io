@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal SVG Animation</title>
+</head>
+<body style="background-color: #1e1e1e; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" style="background-color: #1e1e1e; border-radius: 10px; font-family: 'Courier New', Courier, monospace;">
+        <!-- Terminal background -->
+        <rect x="0" y="0" width="600" height="400" fill="#1e1e1e" rx="10" ry="10" />
+        <text x="20" y="50" font-size="18" fill="#00ff00" id="line1"></text>
+        <text x="20" y="80" font-size="18" fill="#00ff00" id="line2"></text>
+        <text x="20" y="110" font-size="18" fill="#00ff00" id="line3"></text>
+        <text x="20" y="140" font-size="18" fill="#00ff00" id="line4"></text>
+        <text x="20" y="170" font-size="18" fill="#00ff00" id="line5"></text>
+        
+        <!-- Animation script -->
+        <script>
+            const commands = [
+                "pip install openai",
+                "Collecting openai",
+                "  Downloading openai-x.y.z-py3-none-any.whl (100 kB)",
+                "Installing collected packages: openai",
+                "Successfully installed openai-x.y.z"
+            ];
+
+            let currentLine = 1;
+            let currentText = "";
+            let charIndex = 0;
+
+            function typeEffect() {
+                const textElement = document.getElementById(`line${currentLine}`);
+                if (currentLine <= commands.length) {
+                    currentText = commands[currentLine - 1];
+                    if (charIndex < currentText.length) {
+                        textElement.textContent += currentText[charIndex];
+                        charIndex++;
+                        setTimeout(typeEffect, 100);
+                    } else {
+                        currentLine++;
+                        charIndex = 0;
+                        setTimeout(typeEffect, 500);
+                    }
+                }
+            }
+
+            typeEffect();
+        </script>
+    </svg>
+</body>
+</html>

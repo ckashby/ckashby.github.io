@@ -1,0 +1,15 @@
+create a software engineer home page with bootstrap 5.3. One page responsive layout  with links to the about, experience, projects and contact sections. make sure the navbar is fixed and links to the sections.
+
+
+make the navbar menu disappear after selecting a menu item and add drop shadows to the cards.
+
+
+add sample images    ### Did not work
+
+
+add social media links for linkedin, twitter, github and youtube at the bottom with a copyright notice that uses the current date
+
+
+updating the images in the portfolio using placeholder SVGs did not work. Please try again
+
+
