@@ -13,3 +13,14 @@ add social media links for linkedin, twitter, github and youtube at the bottom w
 updating the images in the portfolio using placeholder SVGs did not work. Please try again
 
 
+create a svg animation of a terminal that uses these commands
+pip install -U dspy
+curl -fsSL https://ollama.ai/install.sh | sh
+ollama run llama3.2:1b
+code .
+import dspy
+lm = dspy.LM('ollama_chat/llama3.2', api_base='http://localhost:11434', api_key='api-11abc1234')
+dspy.configure(lm=lm)
+
+
+
