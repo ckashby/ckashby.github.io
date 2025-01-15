@@ -116,7 +116,7 @@
                                 'pip install -U dspy',
                                 'curl -fsSL https://ollama.ai/install.sh | sh',
                                 'ollama run llama3.2:1b',
-                                "lm = dspy.LM('ollama_chat/llama3.2', api_base='http://localhost:11434', api_key='api-11abc1234')",
+                                "lm = dspy.LM('ollama_chat/llama3.2', api_base='http://localhost:11434')",
                                 'dspy.configure(lm=lm)'
                             ];
 
